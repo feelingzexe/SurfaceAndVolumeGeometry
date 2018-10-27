@@ -9,7 +9,8 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
     private Button button;
-    private ImageButton button_book;
+    private Button button2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
+
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openActivity2();
