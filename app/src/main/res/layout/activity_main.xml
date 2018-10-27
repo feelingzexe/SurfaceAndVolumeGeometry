@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="258dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button_test"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -15,15 +27,14 @@
         android:textAllCaps="false"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:fontFamily="@font/kanit_extrabold"
+        app:fontFamily="@font/kanit_thin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="413dp"
+        android:layout_width="415dp"
         android:layout_height="210dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,12 +62,12 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="265dp"
-        android:layout_height="65dp"
+        android:layout_width="253dp"
+        android:layout_height="61dp"
         android:text="คณิตศาสตร์น่ารู้"
         android:textSize="36sp"
         android:textStyle="bold"
-        app:fontFamily="@font/kanit_extrabold"
+        app:fontFamily="@font/kanit_thin"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -66,10 +77,11 @@
         android:layout_width="258dp"
         android:layout_height="59dp"
         android:layout_marginTop="40dp"
-        android:text="เนื้อหาการเรียนรู้"
+        android:background="@drawable/book_new"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />-
 
 </android.support.constraint.ConstraintLayout>

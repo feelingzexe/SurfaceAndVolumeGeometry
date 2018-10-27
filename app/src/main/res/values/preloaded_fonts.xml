@@ -2,5 +2,6 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/kanit_extrabold</item>
+        <item>@font/kanit_light</item>
     </array>
 </resources>
