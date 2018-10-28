@@ -26,7 +26,6 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="210dp"
         android:background="@drawable/button_surfacearea"
-        android:text="surface area"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -40,7 +39,6 @@
         android:layout_height="250dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/button_volume"
-        android:text="volume"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
