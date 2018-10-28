@@ -8,4 +8,40 @@
     tools:context=".Main2Activity"
     tools:layout_editor_absoluteY="25dp">
 
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="335dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="© 2018 Department of Mathematics, Uttaradit School"
+        app:fontFamily="@font/kanit_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_surfacearea"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="210dp"
+        android:background="@drawable/button_surfacearea"
+        android:text="surface area"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_volume"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_volume"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_volume"
+        android:text="volume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

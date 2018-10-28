@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity2();
+                openActivityTest();
             }
         });
 
@@ -37,6 +37,11 @@ public class MainActivity extends AppCompatActivity {
     public void openActivity2()
     {
         Intent intent = new Intent(this, Main2Activity.class);
+        startActivity(intent);
+    }
+    public void openActivityTest()
+    {
+        Intent intent = new Intent(this, Main2Activity.class); //don't forget to change this one.
         startActivity(intent);
     }
 
