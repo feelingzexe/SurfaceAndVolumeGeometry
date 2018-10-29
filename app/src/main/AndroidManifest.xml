@@ -23,7 +23,17 @@
 
         <activity android:name=".Main2Activity" />
         <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity"></activity>
+        <activity android:name=".Main4Activity" />
+        <activity android:name=".vol_prism_activity" />
+        <activity android:name=".vol_pyramid_activity" />
+        <activity android:name=".vol_cylinder_activity" />
+        <activity android:name=".vol_cone_activity" />
+        <activity android:name=".vol_circle_activity" />
+        <activity android:name=".area_prism_activity" />
+        <activity android:name=".area_pyramid_activity" />
+        <activity android:name=".area_cylinder_activity" />
+        <activity android:name=".area_cone_activity" />
+        <activity android:name=".area_circle_activity"></activity>
     </application>
 
 </manifest>
