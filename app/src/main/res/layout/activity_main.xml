@@ -22,13 +22,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="พื้นที่ผิวและปริมาตร"
+        android:layout_marginTop="28dp"
+        android:text="พื้นที่ผิวและปริมาตรอย่างง่าย"
         android:textAllCaps="false"
-        android:textSize="36sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         app:fontFamily="@font/kanit_thin"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toEndOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
