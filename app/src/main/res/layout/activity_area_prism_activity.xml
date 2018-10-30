@@ -10,11 +10,10 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="41dp"
-        android:text="พื้นที่ = พื้นที่ผิวข้าง + 2(พื้นที่ฐาน)"
+        android:text="พื้นที่ผิวทั้งหมด = พื้นที่ผิวข้าง + 2(พื้นที่ฐาน)"
         android:textSize="18sp"
         app:fontFamily="@font/kanit_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 

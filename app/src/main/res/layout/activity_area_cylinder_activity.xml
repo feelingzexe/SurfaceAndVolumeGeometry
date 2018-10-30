@@ -4,6 +4,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".area_cylinder_activity">
+    tools:context=".area_cylinder_activity"
+    tools:layout_editor_absoluteY="25dp">
 
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="249dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="10dp"
+        android:text="พื้นที่ผิวข้าง = 2πr x ความสูง"
+        android:textSize="20sp"
+        app:fontFamily="@font/kanit_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="307dp"
+        android:layout_height="349dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cylinder" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="349dp"
+        android:layout_height="37dp"
+        android:text="พื้นที่ผิวทั้งหมด = 2πr^2 + 2πr x ความสูง"
+        android:textSize="20sp"
+        app:fontFamily="@font/kanit_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="พื้นที่ทรงกรวย"
+        android:textSize="36sp"
+        app:fontFamily="@font/kanit_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="335dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="© 2018 Department of Mathematics, Uttaradit School"
+        app:fontFamily="@font/kanit_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>

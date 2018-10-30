@@ -6,4 +6,67 @@
     android:layout_height="match_parent"
     tools:context=".area_cone_activity">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".vol_cone_activity">
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="พื้นที่ทั้งหมด = พื้นที่ฐาน + พื้นที่ผิวข้าง"
+            android:textSize="20sp"
+            app:fontFamily="@font/kanit_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="307dp"
+            android:layout_height="349dp"
+            android:layout_marginTop="41dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cone" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="พื้นที่ผิวข้าง = πr x สูงเอียง"
+            android:textSize="20sp"
+            app:fontFamily="@font/kanit_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="พื้นที่ทรงกรวย"
+            android:textSize="36sp"
+            app:fontFamily="@font/kanit_light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="335dp"
+            android:layout_height="22dp"
+            android:layout_marginBottom="16dp"
+            android:text="© 2018 Department of Mathematics, Uttaradit School"
+            app:fontFamily="@font/kanit_thin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
 </android.support.constraint.ConstraintLayout>
