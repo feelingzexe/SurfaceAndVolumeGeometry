@@ -33,7 +33,8 @@
         <activity android:name=".area_pyramid_activity" />
         <activity android:name=".area_cylinder_activity" />
         <activity android:name=".area_cone_activity" />
-        <activity android:name=".area_circle_activity"></activity>
+        <activity android:name=".area_circle_activity" />
+        <activity android:name=".TestActivity"></activity>
     </application>
 
 </manifest>
