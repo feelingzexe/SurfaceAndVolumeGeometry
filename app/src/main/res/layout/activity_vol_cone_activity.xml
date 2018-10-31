@@ -6,6 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".vol_cone_activity">
 
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginTop="24dp"
+        android:text="__________________"
+        android:textSize="24sp"
+        app:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        android:textSize="24sp"
+        app:fontFamily="@font/kanit_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="343dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="© 2018 Department of Mathematics, Uttaradit School"
+        app:fontFamily="@font/kanit_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="307dp"
@@ -19,9 +55,9 @@
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="46dp"
         android:layout_marginTop="10dp"
-        android:text="1/3 x πr^2 x ความสูง"
+        android:text="πr^2 x ความสูง"
         android:textSize="24sp"
         app:fontFamily="@font/kanit_light"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,14 +76,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="335dp"
-        android:layout_height="22dp"
-        android:layout_marginBottom="16dp"
-        android:text="© 2018 Department of Mathematics, Uttaradit School"
-        app:fontFamily="@font/kanit_thin"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 </android.support.constraint.ConstraintLayout>
