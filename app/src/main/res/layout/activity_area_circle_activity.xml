@@ -12,31 +12,6 @@
         tools:context=".vol_circle_activity">
 
         <TextView
-            android:id="@+id/textView45"
-            android:layout_width="wrap_content"
-            android:layout_height="33dp"
-            android:layout_marginTop="24dp"
-            android:text="____________"
-            android:textSize="24sp"
-            app:fontFamily="serif"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView24" />
-
-        <TextView
-            android:id="@+id/textView44"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="3"
-            android:textSize="24sp"
-            app:fontFamily="@font/kanit_light"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView45" />
-
-        <TextView
             android:id="@+id/textView40"
             android:layout_width="343dp"
             android:layout_height="24dp"
@@ -74,7 +49,7 @@
             android:id="@+id/textView24"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ปริมาตรทรงกลม"
+            android:text="พื้นที่ผิวทรงกลม"
             android:textSize="36sp"
             app:fontFamily="@font/kanit_light"
             app:layout_constraintEnd_toEndOf="parent"

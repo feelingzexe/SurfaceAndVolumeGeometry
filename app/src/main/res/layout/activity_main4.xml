@@ -19,15 +19,13 @@
 
     <TextView
         android:id="@+id/textView5"
-        android:layout_width="105dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="103dp"
+        android:layout_height="60dp"
         android:text="พื้นที่ผิว"
         android:textSize="33sp"
         app:fontFamily="@font/kanit_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="36dp" />
 
     <Button
         android:id="@+id/button_area_circle"
@@ -45,7 +43,7 @@
         android:layout_width="226dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/fourr"
+        android:background="@drawable/fourrr"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,7 +65,7 @@
         android:layout_width="226dp"
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/twoo"
+        android:background="@drawable/twooo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
@@ -78,7 +76,7 @@
         android:layout_width="226dp"
         android:layout_height="55dp"
         android:layout_marginTop="36dp"
-        android:background="@drawable/onee"
+        android:background="@drawable/oneee"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"

@@ -55,7 +55,7 @@
         android:id="@+id/textView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="พื้นที่ทรงกรวย"
+        android:text="พื้นที่ผิวทรงกระบอก"
         android:textSize="36sp"
         app:fontFamily="@font/kanit_light"
         app:layout_constraintEnd_toEndOf="parent"

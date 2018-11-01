@@ -35,6 +35,7 @@
         <activity android:name=".area_cone_activity" />
         <activity android:name=".area_circle_activity" />
         <activity android:name=".TestActivity" />
+        <activity android:name=".ResultQuiz"></activity>
     </application>
 
 </manifest>
