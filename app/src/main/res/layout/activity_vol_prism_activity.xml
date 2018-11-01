@@ -44,7 +44,7 @@
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ปริมาตรทรงปริซึม"
+        android:text="ปริมาตรปริซึม"
         android:textSize="36sp"
         app:fontFamily="@font/kanit_light"
         app:layout_constraintEnd_toEndOf="parent"

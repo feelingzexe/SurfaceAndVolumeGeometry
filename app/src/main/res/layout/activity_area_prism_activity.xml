@@ -42,7 +42,7 @@
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="พื้นที่ผิวทรงปริซึม"
+        android:text="พื้นที่ผิวปริซึม"
         android:textSize="36sp"
         app:fontFamily="@font/kanit_light"
         app:layout_constraintEnd_toEndOf="parent"

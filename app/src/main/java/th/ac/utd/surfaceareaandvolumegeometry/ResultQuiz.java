@@ -8,31 +8,42 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class ResultQuiz extends AppCompatActivity {
-    private TextView scoreResultText;
-    private TextView scoreAll;
-    private Button exitButton;
+    TextView mGrade, mFinalScore;
+    Button mRetryButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_quiz);
-        scoreResultText = (TextView)findViewById(R.id.score);
-        scoreAll = (TextView)findViewById(R.id.score_all);
-        exitButton = (Button)findViewById(R.id.quit3);
+        setContentView(R.layout.activity_last_score);
 
-        scoreAll.setText(scoreResultText.getText()); // get score text from TestActivity.java
+        mGrade = (TextView)findViewById(R.id.grade);
+        mFinalScore = (TextView)findViewById(R.id.outOf);
+        mRetryButton = (Button)findViewById(R.id.retry);
 
-        exitButton.setOnClickListener(new View.OnClickListener(){
+
+        Bundle bundle = getIntent().getExtras();
+        int score = bundle.getInt("finalScore");
+
+        mFinalScore.setText("คุณได้คะแนน " + score + " คะแนน\nจากคะแนนเต็ม " + QuestionLibrary.questions.length + " คะแนน");
+
+        if (score == 5){
+            mGrade.setText("ยินดีด้วย!");
+        }else if (score == 4){
+            mGrade.setText("ยินดีด้วย!");
+        }else if (score == 3) {
+            mGrade.setText("คุณทำได้ดี!");
+        }else {
+            mGrade.setText("กรุณาตั้งใจมากกว่านี้!");
+        }
+
+        mRetryButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
-                openMainActivity();
+            public void onClick(View view) {
+                startActivity(new Intent(ResultQuiz.this, TestActivity.class));
+                ResultQuiz.this.finish();
             }
         });
-    }
-    public void openMainActivity()
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+
     }
 
 }

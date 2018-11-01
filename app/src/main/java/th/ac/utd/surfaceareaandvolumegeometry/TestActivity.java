@@ -5,187 +5,149 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class TestActivity extends AppCompatActivity {
 
-    private QuestionLibrary mQuestionLibrary = new QuestionLibrary();
+    private TextView mScoreView, mQuestion;
+    private ImageView mImageView;
+    private Button mTrueButton, mFalseButton;
 
-    private TextView mScoreView;
-    private TextView mQuestionView;
-    private Button mButtonChoice1;
-    private Button mButtonChoice2;
-    private Button mButtonChoice3;
-    private Button mButtonExit;
-
-    private String mAnswer;
+    private boolean mAnswer;
     private int mScore = 0;
     private int mQuestionNumber = 0;
-    private int mNextQuestionNumber = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
 
-        mScoreView = (TextView)findViewById(R.id.score);
-        mQuestionView = (TextView)findViewById(R.id.question);
-        mButtonChoice1 = (Button)findViewById(R.id.choice1);
-        mButtonChoice2 = (Button)findViewById(R.id.choice2);
-        mButtonChoice3 = (Button)findViewById(R.id.choice3);
-        mButtonExit = (Button)findViewById(R.id.quit);
-
-        /*
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("");
-        builder.setMessage("คำตอบคือ : " + mAnswer);
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener()
-        {
-              @Override
-               public void onClick(DialogInterface dialogInterface, int i)
-               {
-                    if(mQuestionNumber == 5)
-                    {
-                        Intent intent = new Intent(getApplicationContext(), ResultQuiz.class);
-                        startActivity(intent);
-                    }
-                    else
-                    {
-                        updateQuestion();
-                    }
-               }
-        });
-        builder.setCancelable(false);
-        builder.show();
-        */
-
-
-        //updateQuestion();
-        mNextQuestionNumber = mQuestionNumber++;
+        mScoreView = (TextView)findViewById(R.id.points);
+        mImageView = (ImageView)findViewById(R.id.imageView);
+        mQuestion = (TextView)findViewById(R.id.question);
+        mTrueButton = (Button)findViewById(R.id.trueButton);
+        mFalseButton = (Button)findViewById(R.id.falseButton);
 
         updateQuestion();
-        //updateQuestion();
 
-        mButtonChoice1.setOnClickListener(new View.OnClickListener(){
+        //Logic for true button
+        mTrueButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (mButtonChoice1.getText() == mAnswer) {
+                if(mAnswer == true) {
+                    mScore++;
+                    updateScore(mScore);
 
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-
-                    else {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        updateQuestion();
-                        Toast.makeText(TestActivity.this, "คำตอบถูกต้อง!", Toast.LENGTH_SHORT).show();
-                    }
-                }
-                else
-                {
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-                    else {
-                        Toast.makeText(TestActivity.this, "คำตอบผิด.", Toast.LENGTH_SHORT).show();
+                    //perform check before you update the question
+                    if (mQuestionNumber == QuestionLibrary.questions.length) {
+                        Intent i = new Intent(TestActivity.this, ResultQuiz.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore", mScore);
+                        i.putExtras(bundle);
+                        TestActivity.this.finish();
+                        startActivity(i);
+                    } else {
                         updateQuestion();
                     }
                 }
-            }
-        });
-
-        mButtonChoice2.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-
-                if (mButtonChoice2.getText() == mAnswer){
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-                    else {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        updateQuestion();
-                        Toast.makeText(TestActivity.this, "คำตอบถูกต้อง!", Toast.LENGTH_SHORT).show();
-                    }
-
-                }else {
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-                    else {
-                        Toast.makeText(TestActivity.this, "คำตอบผิด.", Toast.LENGTH_SHORT).show();
+                else {
+                    if (mQuestionNumber == QuestionLibrary.questions.length) {
+                        Intent i = new Intent(TestActivity.this, ResultQuiz.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore", mScore);
+                        i.putExtras(bundle);
+                        TestActivity.this.finish();
+                        startActivity(i);
+                    } else {
                         updateQuestion();
                     }
                 }
             }
         });
 
-        mButtonChoice3.setOnClickListener(new View.OnClickListener(){
+
+
+
+        //Logic for false button
+        mFalseButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
+                if(mAnswer == false) {
+                    mScore++;
+                    updateScore(mScore);
 
-                if (mButtonChoice3.getText() == mAnswer){
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-                    else {
-                        mScore = mScore + 1;
-                        updateScore(mScore);
-                        updateQuestion();
-                        Toast.makeText(TestActivity.this, "คำตอบถูกต้อง!", Toast.LENGTH_SHORT).show();
-                    }
-
-                }else {
-                    if (mQuestionNumber++ == 5) {
-                        openResult();
-                    }
-                    else {
-                        Toast.makeText(TestActivity.this, "คำตอบผิด.", Toast.LENGTH_SHORT).show();
+                    //perform check before you update the question
+                    if (mQuestionNumber == QuestionLibrary.questions.length) {
+                        Intent i = new Intent(TestActivity.this, ResultQuiz.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore", mScore);
+                        i.putExtras(bundle);
+                        TestActivity.this.finish();
+                        startActivity(i);
+                    } else {
                         updateQuestion();
                     }
                 }
-            }
-        });
-
-        mButtonExit.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-                openMainActivity();
+                else {
+                    if (mQuestionNumber == QuestionLibrary.questions.length) {
+                        Intent i = new Intent(TestActivity.this, ResultQuiz.class);
+                        Bundle bundle = new Bundle();
+                        bundle.putInt("finalScore", mScore);
+                        i.putExtras(bundle);
+                        TestActivity.this.finish();
+                        startActivity(i);
+                    } else {
+                        updateQuestion();
+                    }
+                }
             }
         });
 
     }
 
-    private void updateQuestion(){
-        mQuestionView.setText(mQuestionLibrary.getQuestion(mQuestionNumber));
-        mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
-        mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
-        mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+    private void updateQuestion() {
 
-        mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
+        mImageView.setImageResource(QuestionLibrary.images[mQuestionNumber]);
+        mQuestion.setText(QuestionLibrary.questions[mQuestionNumber]);
+        mAnswer = QuestionLibrary.answers[mQuestionNumber];
         mQuestionNumber++;
     }
-    public void openResult()
-    {
-        Intent intent = new Intent(this, ResultQuiz.class);
-        startActivity(intent);
-    }
-    public void openMainActivity()
-    {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-    }
-
 
     private void updateScore(int point) {
         mScoreView.setText("" + mScore);
     }
 
+    public void clickExit(View view) {
+        askToClose();
+    }
 
+
+    @Override
+    public void onBackPressed() {
+        askToClose();
+    }
+
+    private void askToClose (){
+        AlertDialog.Builder builder = new AlertDialog.Builder(TestActivity.this);
+        builder.setMessage("คุณแน่ใจหรือไม่ที่จะออกจากการทำแบบทดสอบ?");
+        builder.setCancelable(true);
+        builder.setPositiveButton("ตกลง", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+                finish();
+            }
+        });
+        builder.setNegativeButton("ยกเลิก", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.cancel();
+
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 }
