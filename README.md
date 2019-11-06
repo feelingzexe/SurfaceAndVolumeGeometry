@@ -1,6 +1,6 @@
 # SurfaceAndVolumeGeometry
-Developing Android Application for learning about Geometry Surface and Volume, Using Android Studio.
-For Department of Mathematics, Uttaradit School.
+<h3>Developing Android Application for learning about Geometry Surface and Volume, Using Android Studio.
+<h4>For Department of Mathematics, Uttaradit School.
 
 <img src="Screenshot_20191106-201625.jpg" width="300" height="600">
 <img src="Screenshot_20191106-201633.jpg" width="300" height="600">
