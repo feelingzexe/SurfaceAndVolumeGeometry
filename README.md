@@ -6,7 +6,7 @@
   <p align="center">
     Android Application for Education, Developed by Uttaradit School Student
     <br />
-    <a href="https://utd.ac.th/"><strong>Uttaradit School »</strong></a>
+    <a href="https://utd.ac.th/" target="_blank"><strong>Uttaradit School »</strong></a>
   </p>
 </p>
 
