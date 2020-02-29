@@ -7,6 +7,7 @@
     Android Application for Education, Developed by Uttaradit School Student
     <br />
     <a href="https://utd.ac.th/" target="_blank"><strong>Uttaradit School »</strong></a>
+    <a href="https://www.sillapa.net/home/" target="_blank"><strong>Sillapa 68 »</strong></a>
   </p>
 </p>
 
