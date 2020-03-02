@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/jawzainw0123">
+  <a href="https://github.com/feelingzexe">
     <img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="Logo" width="120" height="120">
   </a>
   <h3 align="center">Surface And Volume Geometry</h3>
